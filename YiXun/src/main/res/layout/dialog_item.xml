@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="防丢"
+            android:id="@+id/button_find" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="手机防丢停止"
+            android:id="@+id/button_find_end" />
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="防盗"
+            android:id="@+id/button_safe" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="物品防丢停止"
+            android:id="@+id/button_find_thing_end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="防丢（发光）"
+            android:id="@+id/button_sight" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="防丢（响声）"
+            android:id="@+id/button_sound" />
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="停光"
+            android:id="@+id/button_sight_end" />
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="停声"
+            android:id="@+id/button_sound_end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:id="@+id/text_time"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

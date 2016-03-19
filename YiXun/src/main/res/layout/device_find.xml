@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleprogress="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:id="@+id/iv_startsearch"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/bt_search_blue" />
+
+        <TextView
+            android:id="@+id/tv_scanresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_startsearch"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:text="@string/promp_scanresult"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_scanresult"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:text="@string/promp_putclose"
+            android:textSize="20sp" />
+
+        <com.god.collapsingavatartoolbar.sample.View.CircleProgress
+            android:id="@+id/progress"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            circleprogress:color1="@android:color/holo_red_light"
+            circleprogress:color2="@android:color/holo_green_light"
+            circleprogress:color3="@android:color/holo_blue_light"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_prompt"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/title_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/circle_line"
+        android:paddingLeft="5dp"
+        android:text="@string/title_paired_devices"
+        android:textColor="#fff" />
+
+    <ListView
+        android:id="@+id/paired_de0vices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" />
+
+    <TextView
+        android:id="@+id/title_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/circle_line"
+        android:paddingLeft="5dp"
+        android:text="@string/title_other_devices"
+        android:textColor="#fff" />
+
+    <ListView
+        android:id="@+id/new_device0s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="true" />
+    </LinearLayout>
+</LinearLayout>
